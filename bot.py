@@ -11,7 +11,7 @@ RSS_FEED_URL = os.getenv("RSS_FEED_URL", "https://rss.nytimes.com/services/xml/r
 
 # Setup APIs
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel('models/gemini-2.5-flash')
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 def fetch_and_summarize():
